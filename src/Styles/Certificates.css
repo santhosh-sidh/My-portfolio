@@ -1,0 +1,53 @@
+#Certificates {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #9bbbbb;
+}
+.certificatesPane {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.slider {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: rotate 90s linear infinite reverse;
+}
+@keyframes rotate {
+    0% {
+        transform: perspective(800px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(800px) rotateY(360deg);
+    }
+}
+.slider span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*36deg)) translateZ(350px);
+}
+.slider span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100;
+    object-fit: cover;
+    transition: 1s;
+}
+span:hover img {
+    transform: translateY(-25px) scale(1.5);
+}
+.slider:hover {
+    animation-play-state: paused;
+}

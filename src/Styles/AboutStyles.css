@@ -1,0 +1,54 @@
+.abtText {
+    text-indent: 5%;
+    text-align: justify;
+}
+#aboutMeSection {
+    background-color: #69a0a0;
+    padding: 7% 0;
+}
+.aboutMe {
+    background-color: white;
+    border-radius: 10px;
+}
+.eduText, .expText {
+    background-color: whitesmoke;
+}
+.listOfEdu, .expList {
+    background-color: #69a0a0;
+    padding: 5%;
+    border-radius: 10px;
+}
+.educations {
+    background-color: whitesmoke;
+    padding: 5%;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+#degree, #companyName {
+    font-size: 20px;
+    font-weight: 700;
+}
+.eduDetails {
+    line-height: 2;
+    border-radius: 10px;
+}
+.seperator {
+    height: 20px;
+    background-color: whitesmoke;
+}
+.expAndEduBtns {
+    text-align: right;
+}
+.expAndEduLink {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.742);
+}
+.expAndEduLink:hover {
+    text-decoration: underline;
+    color: black;
+    font-size: 17px;
+}
+.arrowIcon {
+    color: limegreen;
+}
